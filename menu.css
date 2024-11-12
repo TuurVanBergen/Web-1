@@ -1,0 +1,80 @@
+/*Het hamburger menu op deze website heb ik gehaald van W3Schools
+https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+Geraadpleegd op 23 december 2022. 
+*/
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff4e4;
+  background-color: #fff4e4;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.nav2{
+  display: none;
+}
+.overlay-content {
+  
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+@media (max-width: 1024px){
+  .nav2
+  {
+   display: block;
+  }
+
+  header{
+   display: none;
+  }
+
+  .nav2{
+   grid-column: 1/13;
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   align-items: center;
+  }
+ }
+
+.nav2 h1{
+  grid-column: 4/11;
+  margin-left: 50px;
+}
+.visible{
+  grid-column: 1/4;
+}

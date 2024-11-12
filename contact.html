@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact - Tuur Van Bergen</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+    </head>
+<body>
+
+    <div class="wrapper">
+        <div class="nav2">
+
+            <!--Het hamburger menu op deze website heb ik gehaald van W3Schools
+            https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+            Geraadpleegd op 23 december 2022. -->
+
+         <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Blog</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <span class="visible" style="font-size:30px;cursor:pointer" onclick="openNav()">&#x268C;</span>
+          <script>
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+          </script>
+                  <h1>Tuur Van Bergen</h1>
+          </div>
+
+          <!--Weergeven van het grid-->
+        <div id="grid">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        
+        <!--Navigatie balk-->
+        <header>
+            <h1>Tuur Van Bergen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="geselecteerd"><a href="images/contact.html">Contact</a></li>
+                    <li class="pictogram"><a href="#"><img src="images/insta.png" alt=""></a></li>
+                    <li class="pictogram"><a href="#"><img src="images/youtube.webp" alt=""></a></li>
+                    <li class="pictogram"><a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Contact pagina Tekst-->
+        <div class="Contact">
+            <div class="Contact-tekst">
+                <h1>Get in touch.</h1>
+                <p>If there are any questions about my website, or you have a business deal for me, please fill out the form below.</p>
+
+                    <h4>Tuur.vanbergen@outlook.com (+32) 474 43 17 04</h4>
+                    <h4>Dirk Boutslaan 13, Leuven 3000</h4>
+                    <div class="socials1">
+                        <a href="#"><img src="images/insta.png" alt=""class="footer1"></a>
+                       <a href="#"><img src="images/youtube.webp" alt="" class="footer2"></a>
+                       <a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""  class="footer3"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact pagina Form-->
+        <form class="contactForm">
+            <label>Name*</label>
+            <input type="text" id="text" placeholder="First Name">
+            <input type="text" id="LName"placeholder="Last Name">
+            <label class="Label-Email">Email*</label>
+            <input type="Email" id="email" name="Email">
+            <label class="Label-message">Message*</label>
+            <input type="text" id="message" name="text">
+            <a href="#">Send</a>
+        </form>
+
+        <!--de footer van de website-->
+        <div class="footer">
+            <a href="#"><img src="images/insta.png" alt=""class="footer1"></a>
+            <a href="#"><img src="images/youtube.webp" alt="" class="footer2"></a>
+            <a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""  class="footer3"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Tuur Van Bergen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav2">
+
+            <!--Het hamburger menu op deze website heb ik gehaald van W3Schools
+            https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+            Geraadpleegd op 23 december 2022. -->
+
+            <div id="myNav" class="overlay">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <div class="overlay-content">
+                <a href="index.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+               </div>
+             </div>
+             <span class="visible" style="font-size:30px;cursor:pointer" onclick="openNav()">&#x268C;</span>
+             <script>
+             function openNav() {
+               document.getElementById("myNav").style.height = "100%";
+             }
+             
+             function closeNav() {
+               document.getElementById("myNav").style.height = "0%";
+             }
+             </script>
+                     <h1>Tuur Van Bergen</h1>
+        </div>
+
+            <!--Weergeven van het grid-->
+        <div id="grid">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <!--navigatie weergeven-->
+        <header>
+            <h1>Tuur Van Bergen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Blog</a></li>
+                    <li class="geselecteerd"><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="pictogram"><a href="#"><img src="images/insta.png" alt=""></a></li>
+                    <li class="pictogram"><a href="#"><img src="images/youtube.webp" alt=""></a></li>
+                    <li class="pictogram"><a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--about text en de afbeelding weergeven-->
+        <div class="About">
+            <div class="About-tekst">
+                <h1>Hey, I'm Tuur. I'm Creative, Musical and love working with computers. Therefore, I am studying something in which I can combine all my interests.</h1>
+                <p>From a young age, I have been interested in art, technology and the combination of the two. It all started when my parents bought me a book about art. I was so interested in it that I could name all the paintings and the names of the artists. The interest in art has only grown stronger over the years. I also found computer science and computers very interesting. I thought it was crazy to see how a simple computer just made out of wires could solve such difficult tasks so quickly. that's also why I chose to study Multimedia & Creative technology. It's the perfect combination between art and IT. I hope one day to work as a freelancer or an employee at a creative agency.</p>
+                <p> As a hobby, I play the viola. I have been doing this since I was 3 years old. I started in a small viola school called Altelier. Then I continued in the music school of Lier. Now, about 15 years later I still play viola. I am very happy that my parents gave me that opportunity to start playing music. it has shaped me into the person I am today.</p>
+            </div>
+            <div class="About-img">
+                <img src="images/aboutfoto.png" alt="about-img">
+            </div>
+        </div>
+
+        <!--de footer van de website weergeven-->
+        <div class="footer">
+            <a href="#"><img src="images/insta.png" alt=""class="footer1"></a>
+            <a href="#"><img src="images/youtube.webp" alt="" class="footer2"></a>
+            <a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""  class="footer3"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,532 @@
+/*Het hamburger menu op deze website heb ik gehaald van W3Schools
+https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+Geraadpleegd op 23 december 2022. 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+margin: 0;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+background-color: #fff4e4;
+}
+
+/**/
+.wrapper{
+        width: 92%;
+        background-color: #fff4e4;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+    }
+.wrapper1{
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        margin: 0 auto;
+    }
+
+ /* het grid tonen*/
+ /*Het staat nu op display none, dus het is niet meer zichtbaar.*/
+#grid{
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+#grid p{
+        border: 1px solid #000;
+        margin: 0;
+        opacity: 0.2;
+    }
+
+/*Navigatie van de website*/
+header{
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 8px;
+    padding-bottom: 28px;
+}
+header h1{
+    grid-column: 1/5;
+    color: #000;
+    font-size: 32px;
+}
+header nav{
+    grid-column: 8/13;
+    align-self:center ;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/*De pictogrammen in de navigatie vd website stylen*/
+.pictogram img{
+    width: 18px;
+}
+.pictogram{
+    padding-right: 1px;
+    padding-left: 10px;
+}
+
+/*De geselecteerde pagina onderstrepen in de navigatiebalk*/
+.geselecteerd{
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+}
+/*De geselecteerde pagina onderstrepen in de navigatiebalk*/
+.hero{   
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* column-gap: 10%; */
+    padding-bottom: 50px;
+}
+
+/*De code hieronder is voor de IndexPagina*/
+/*stylen van de hero imagen en de hero text*/
+.hero-image{
+    grid-column: 1/7;
+}
+.hero-image img{
+    width: 100%;
+}
+.hero-text{
+    grid-column: 8/13;
+    margin-top: 120px;
+}
+
+.hero-text h3{
+    font-size: 35px;
+}
+.hero-text h4{
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+/*De titel en het bijschrift van de blog stylen*/
+.title{
+    background-color: #fff;
+    grid-column:1/13 ;
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom:70px;
+    width: 50%;
+    margin: 0 auto;
+}
+.title p{
+    font-size: 16px;
+    color: #000;
+}
+.title h1{
+    font-size: 35px;
+    color: #f08E80;
+    padding-bottom: 15px;
+}
+
+/*Het stylen van de blog foto's en de bijhorende tekst*/
+section{
+    width: 92%;
+    margin: 0 auto;
+    grid-column: 1/13;
+    background-color: #fff;
+    grid-template-columns: repeat(12, 1fr);
+    display: grid;
+    column-gap: 50px;
+    margin-bottom: 65px;
+}
+section h1{
+    color: #f08E80;
+    font-size: 25px;
+}
+section p{
+    color: #000;
+    font-size: 15px;
+}
+section a{
+    color: #f08E80;
+    font-size: 15px;
+    border-bottom: 1px solid #f08E80;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+.kolom1{
+    grid-column: 1/5;
+    background-color: #fff;
+}
+
+.kolom2{
+    grid-column: 5/9;
+    background-color: #fff;
+}
+.kolom3{
+    grid-column: 9/13;
+    background-color: #fff;
+}
+section img{
+    width: 100%;
+    padding-top: 60px;
+}
+.foto{
+    grid-column: 1/5;
+}
+.foto0{
+    grid-column: 5/9;
+}
+.foto1{
+    grid-column: 9/13;
+}
+.foto2{
+    grid-column: 1/5; 
+}
+.foto3{
+    grid-column: 5/9;
+}
+.foto4{
+    grid-column: 9/13;
+}
+.foto5{
+    grid-column:1/5;
+}
+.foto6{
+    grid-column:5/9;
+}
+.foto7{
+    grid-column:9/13;
+}
+
+/*stylen van het donatie gedeelte*/
+
+.donate{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.donate-tekst{
+    margin-top: 125px;
+    grid-column: 8/13;
+}
+.donate-tekst p{
+    margin-bottom: 135px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+.donate-tekst h1{
+    margin-top: 115px;
+    font-size: 35px;
+}
+.donate-foto{
+    grid-column: 1/7;
+}
+.donate-foto img{
+    padding-top: 100px;
+    width: 100%;
+}
+
+/*stylen van de buttons*/
+.button{
+    text-decoration: none;
+    background-color: #f08E80;
+    color:  white;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 18px;
+}
+.button:hover{
+    background-color: #f8a494;
+}
+
+/*stylen van het sign up gedeelte*/
+.sign-up{
+    grid-column: 1/13;
+    background-image: url(images/Bergen2.jpeg);
+    height: 500px;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 250px;
+    color: #fff;
+}
+.indexForm input{
+    font-size: 16px;
+    padding: 25px 60px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+.indexForm  a{
+    padding: 25px 45px;
+    background-color: #f08E80;
+    color: white;
+    text-decoration: none;
+}
+.indexForm  a:hover{
+    opacity: 50%;
+}
+
+/*Dit is de code voor de About Pagina */
+/*stylen van de tekst op de About Pagina */
+.About{
+    display: grid;
+    background-color: #fff4e4;
+    grid-column: 1/13;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 0px;
+    padding-top: 15px;
+}
+.About-tekst{
+    grid-column: 1/7;
+}
+.About-tekst h1{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.About-tekst p{
+    font-size: 16px;
+}
+
+/*stylen van de image op de About Pagina */
+.About-img{
+    grid-column: 8/13;
+    margin-top:28px ;
+}
+.About-img img{
+    width: 100%;
+}
+
+/*Dit is de code voor de Contact pagina*/
+/*stylen van de tekst op de contact pagina */
+.Contact{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1/13;
+}
+.Contact-tekst{
+    grid-column: 4/10;
+    padding-top: 50px;
+}
+.Contact-tekst h1{
+    font-size: 43px;
+    margin-bottom: 25px;
+    }
+.Contact-tekst p{
+    font-size: 16px;
+ }
+.Contact-tekst h4{
+    margin-top: 32px;
+    font-size: 18px;
+    width: 30%;
+}
+
+/*stylen van de form op de contact pagina. */
+.contactForm{
+    margin-top: 100px;
+}
+.contactForm  a{
+    grid-column: 4/5;
+    padding:20px 32px 20px 32px;
+    background-color: #f08E80;
+    color: white;
+    text-decoration: none;
+}
+.contactForm  a:hover{
+background-color: #f8a494;
+}
+.contactForm label{
+    grid-column: 4/5;
+}
+.contactForm{ 
+    grid-template-columns: repeat(12,1fr);
+    display: grid;
+    grid-column: 1/13;
+}
+.contactForm #text{
+    grid-column: 4/7;
+    font-size: 14px;
+    padding: 12px;
+    margin: 6px 0 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 2px;
+}
+.contactForm #LName{
+    grid-column: 7/10;
+    font-size: 14px;
+    padding: 12px;
+    margin: 6px 0 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+.contactForm .Label-Email{
+    margin-top: 25px;
+}
+
+.contactForm .Label-message{
+    margin-top: 25px;
+}
+.contactForm #email{
+    grid-column: 4/10;
+    font-size: 14px;
+    padding: 10px;
+    margin: 6px 0 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 2px;
+    width: 100%;
+}
+.contactForm #message{
+    grid-column: 4/10;
+    padding:40px;
+    margin: 6px 0 25px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 2px;
+}
+
+/*stylen van de sociale media afbeeldingen*/
+.socials1{
+    margin-top: 32px;
+}
+.socials1 img{
+    width: 20px;
+    padding-right: 15px;
+}
+
+/*De footer van elke pagina*/
+.footer{
+    grid-column: 1/13;
+    background-color: #fff4e4;
+    text-align: center;
+    padding: 50px 0;
+    height: 50px;
+    align-items: center;
+}
+.footer img{
+    width: 20px;
+    padding-right: 15px;
+}
+
+/*Dit is de code voor het responsive maken van alle Pagina's*/
+@media (max-width: 1024px){
+
+    /*index pagina responsive maken*/
+    .hero-image {
+        grid-column: 1/13;
+    }
+    .hero-text{
+        margin-top: auto;
+        grid-column: 1/13;
+        font-size: 28px;
+    }
+    .hero-text h3{
+        font-size: 28px;
+    }
+    .title{
+        margin-top: auto;
+        grid-column: 1/13;
+        padding: 0;
+    } 
+    .title h1{
+        font-size: 28px;
+    } 
+    section{
+        column-gap: 0;
+    }
+    section img{
+        padding-top: 15px;
+    }
+    .kolom1{
+        grid-column: 1/13;
+        width: 100%;
+        column-gap: 0;
+    }
+    .kolom2{
+        grid-column: 1/13;
+        width: 100%;
+        column-gap: 0;
+    }
+    .kolom3{
+        grid-column: 1/13;
+        width: 100%;
+        column-gap: 0;
+    }
+     .donate-foto{
+        grid-column: 1/13;
+     }
+     .donate-tekst{
+        grid-column: 1/13;
+     }
+     .donate-tekst h1{
+        margin-top:0;
+     }
+     .donate-tekst p{
+        margin-bottom:50px;
+     }
+     .sign-up{
+        grid-column: 1/13;
+     } 
+
+     /*About pagina responsive maken*/
+     .About{
+        grid-column: 1/13;
+     }
+     .About-tekst{
+        grid-column: 1/13;
+     }
+     .About-img{
+        grid-column: 1/13;
+     }
+
+     /*contact pagina responsive maken*/
+     .Contact{
+        grid-column: 1/13;
+     }
+     .Contact-tekst{
+        grid-column: 1/13;
+     }
+     .contactForm{
+        grid-column: 1/13;
+     }
+     .contactForm #text{
+        grid-column: 1/6;
+    }
+    .contactForm #LName{
+        grid-column: 6/13;
+    }
+    .contactForm #email{
+        grid-column: 1/13;
+    }
+    .contactForm #message{
+        grid-column: 1/13;
+    }
+    .contactForm  a{
+        grid-column: 1/2;
+    }
+    .contactForm label{
+        grid-column: 1/13;
+    }
+}

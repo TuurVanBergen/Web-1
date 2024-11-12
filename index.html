@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tuur Van Bergen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body> 
+
+    <div class="wrapper">
+        <div class="nav2">
+
+            <!--Het hamburger menu op deze website heb ik gehaald van W3Schools
+            https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+            Geraadpleegd op 23 december 2022. -->
+
+            <div id="myNav" class="overlay">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <div class="overlay-content">
+                <a href="index.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+               </div>
+             </div>
+             <span class="visible" style="font-size:30px;cursor:pointer" onclick="openNav()">&#x268C;</span>
+             <script>
+             function openNav() {
+               document.getElementById("myNav").style.height = "100%";
+             }
+             
+             function closeNav() {
+               document.getElementById("myNav").style.height = "0%";
+             }
+             </script>
+                     <h1>Tuur Van Bergen</h1>
+             </div>
+
+             <!--Weergeven van het grid-->
+        <div id="grid">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <!--Navigatie balk-->
+        <header>
+            <h1>Tuur Van Bergen</h1>
+            <nav>
+                <ul>
+                    <li class="geselecteerd"><a href="index.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="pictogram"><a href="#"><img src="images/insta.png" alt=""></a></li>
+                    <li class="pictogram"><a href="#"><img src="images/youtube.webp" alt=""></a></li>
+                    <li class="pictogram"><a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--hero-image en hero-text tonen-->
+        <div class="hero">
+            <div class="hero-image">
+                <img src="images/foto1.png" alt="hero-image">
+            </div>
+            <div class="hero-text">
+                <h4>Tuur Van Bergen</h4>
+                <h3>Hello, my name is Tuur. I am a Multec student at Erasmushogeschool Brussel, and in my spare time I like to play Viola. On this website I write about all the activities I do in my free time.</h3>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<div class="wrapper1">
+
+    <!--Het tonen van de titel en het bijschrift van het blog gedeelte-->
+    <div class="title">
+        <h1>Recent Posts.</h1>
+        <p>Here you can read about all my activities, hobbies and vacations.</p>
+    </div>
+
+<!--Het tonen van de foto's en de tekst van het blog gedeelte-->
+        <section>
+            <div class="kolom1">
+                <div class="foto">
+                    
+                    <img src="images/indexFoto1.png" alt="">
+                    <p>29/9/22</p>
+                    <h1>Vacation Normandy (France).</h1>
+                    <p>I went for a long walk with my Dog Medar...</p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="foto2">
+                    <img src="images/indexFoto7.jpeg" alt="">
+                    <p>16/7/22</p>
+                    <h1>Vacation Freiburg (Germany).</h1>
+                    <p>On vacation in Freiburg, we took a wonderful hike...</p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="foto5">
+                    <img src="images/IndexFoto9.jpeg" alt="">
+                    <p>20/5/22</p>
+                    <h1>On viola workshop in the Ardennes.</h1>
+                    <p>Every year I go with Altelier, a viola school on...</p>
+                    <a href="#">Read More</a>
+                </div>    
+            </div>
+
+            <div class="kolom2">
+                <div class="foto0">
+                    <img src="images/indexFoto3.png" alt="">
+                    <p>22/8/22</p>
+                    <h1>Viola performance at the Academy of Lier.</h1>
+                    <p>In August, I played a concert at the Academy...</p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="foto3">
+                    <img src="images/IndexFoto5.jpeg" alt="">
+                    <p>6/4/22</p>
+                    <h1>Vacation Alps (Italy).</h1>
+                    <p>In April, me and my family went skiing in the Alps...</p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="foto6">
+                    <img src="images/indexFoto6.png" alt="">
+                    <p>30/4/22</p>
+                    <h1>Vacation Grand-Ville (France).</h1>
+                    <p>Grand-Ville completely charmed me, definitely recommended...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="kolom3">
+                <div class="foto1">
+                    <img src="images/IndexFoto2.jpeg" alt="">
+                    <p>14/8/22</p>
+                    <h1>Vacation Copenhagen (Denmark).</h1>
+                    <p>One of the most beautiful cities I have ever been to...</p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="foto4">
+                    <img src="images/IndexFoto8.jpeg" alt="">
+                    <p>30/6/22</p>
+                    <h1>Trip to Kortrijk (Belgium).</h1>
+                    <p>Over the summer, my dad and I went to visit a new city...</p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="foto7">
+                    <img src="images/indexFoto4.png" alt="">
+                    <p>17/4/22</p>
+                    <h1>Cooking session Leuven (Belgium).</h1>
+                    <p>Luka came over to make pasta together...</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div class="wrapper">
+
+            <!--FDonatie deel tonen.-->
+            <div class="donate-foto">
+                <img src="images/Bergen.jpeg" alt="">
+            </div>
+            <div class="donate-tekst">
+                <h1>Donate.</h1>
+                <p>Creating a website takes a lot of time and money. That's why I gave you the opportunity to donate. All the income goes to hosting the website.</p>
+                <a  class="button" href="#">Donate</a>
+            </div>
+        <div class="sign-up">
+            <h1 class="sign-up-title">Being among the first to read my blog?</h1>
+            <p class="sign-up-text">Sign up your email address to receive news and updates.</p>
+            <form class="indexForm">
+                <input type="Email" id="Email"placeholder="Email Address">
+                <a href="#">Sign up</a>
+            </form>
+        </div>
+        <div class="footer">
+                <a href="#"><img src="images/insta.png" alt=""class="footer1"></a>
+                <a href="#"><img src="images/youtube.webp" alt="" class="footer2"></a>
+                <a href="#"><img src="images/iconmonstr-twitter-1.svg" alt=""  class="footer3"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
